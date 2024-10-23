@@ -1,11 +1,11 @@
-# Docker-scanner
-# Stage 1: Fetching necessary binaries
+## Docker-scanner
+## Stage 1: Fetching necessary binaries
 FROM debian:stable-slim AS fetcher
 
-# Install curl and other necessary tools in the fetcher stage
+## Install curl and other necessary tools in the fetcher stage
 RUN apt-get update && apt-get install -y curl
 
-# Fetching binaries
+## Fetching binaries
 WORKDIR /tmp
 
 # Download ctop (v0.7.7)
